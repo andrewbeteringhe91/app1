@@ -62,6 +62,7 @@
             clear: both;
             display: block;
             text-align: left;
+            float: left;
             padding: 10px 20px;
             color: white;
             text-decoration: none;
@@ -93,8 +94,10 @@
     <script>
         function toggleSubmenu() {
             var submenu = document.getElementById("submenu");
+            var icon = document.getElementsByClassName("menu-icon");
             if (submenu.style.display === "block") {
                 submenu.style.display = "none";
+
             } else {
                 submenu.style.display = "block";
             }
